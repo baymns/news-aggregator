@@ -106,7 +106,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpeg|gif)$/,
+        test: /\.(png|jpe?g|gif|webp)$/,
         use: ['file-loader'],
       },
       {

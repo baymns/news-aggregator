@@ -10,23 +10,25 @@ import './Header.scss';
 const Header = () => {
   return (
     <header className='header'>
-      <div className='burger'>
-        <div className='burger__icon-container'>
-          <BurgerIcon className='burger__icon' />
+      <div className='header__inner'>
+        <div className='burger'>
+          <div className='burger__icon-container'>
+            <BurgerIcon className='burger__icon' />
+          </div>
         </div>
-      </div>
 
-      <div className='logo header__item_v-center'>
-        <Logo />
-      </div>
-      <Search />
-      <AddNewEntry />
-      <div className='notifications header__item_v-center'>
-        <Bell />
-      </div>
-      <div className='user header__item_v-center'>
-        <User className='user__icon' />
-        <span>Войти</span>
+        <div className='logo header__item_v-center'>
+          <Logo />
+        </div>
+        <Search />
+        <AddNewEntry />
+        <div className='notifications header__item_v-center'>
+          <Bell />
+        </div>
+        <div className='user header__item_v-center'>
+          <User className='user__icon' />
+          <span>Войти</span>
+        </div>
       </div>
     </header>
   );
